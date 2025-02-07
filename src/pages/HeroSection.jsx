@@ -110,7 +110,7 @@ export default function HeroSection() {
                             {t("tytul-glowny")}
                         </h1>
                         <div className="mt-6 max-w-xl lg:mt-0 xl:col-end-1 xl:row-start-1">
-                            <p className="text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
+                            <p className="text-2xl font-medium text-pretty text-gray-500 sm:text-4xl">
                                 {t("tytul-data")}
                             </p>
                             <div className="mt-10 flex items-center gap-x-6">

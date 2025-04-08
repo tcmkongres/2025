@@ -121,18 +121,30 @@ const PricingSection = () => {
                   ))}
                 </ul>
               </div>
-              <a
-                href={tier.href}
+              <span
                 aria-describedby={tier.id}
                 className={classNames(
                   tier.mostPopular
-                    ? "bg-indigo-600 text-white shadow-xs hover:bg-indigo-500"
-                    : "text-indigo-600 ring-1 ring-indigo-200 ring-inset hover:ring-indigo-300",
-                  "mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600",
+                    ? "bg-indigo-300 text-white cursor-not-allowed"
+                    : "text-indigo-300 ring-1 ring-indigo-100 ring-inset cursor-not-allowed",
+                  "mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold opacity-50",
                 )}
               >
                 {t(pricingKey.buy)}
-              </a>
+              </span>
+
+              {/*<a*/}
+              {/*    href={tier.href}*/}
+              {/*    aria-describedby={tier.id}*/}
+              {/*    className={classNames(*/}
+              {/*        tier.mostPopular*/}
+              {/*            ? "bg-indigo-600 text-white shadow-xs hover:bg-indigo-500"*/}
+              {/*            : "text-indigo-600 ring-1 ring-indigo-200 ring-inset hover:ring-indigo-300",*/}
+              {/*        "mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600",*/}
+              {/*    )}*/}
+              {/*>*/}
+              {/*  {t(pricingKey.buy)}*/}
+              {/*</a>*/}
             </div>
           ))}
         </div>

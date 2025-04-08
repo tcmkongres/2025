@@ -3,44 +3,44 @@ import { CheckIcon } from "@heroicons/react/20/solid/index.js";
 
 const tiers = [
   {
-    name: "Bilety spacjalne",
+    name: "pricing-tier-special-tickets-name",
     id: "tier-freelancer",
     href: "#",
-    priceMonthly: "od 220 PLN",
-    description: "Bilet wstepu na dodatkowe wykłady",
+    priceMonthly: "pricing-tier-special-tickets-price",
+    description: "pricing-tier-special-tickets-description",
     features: [
-      "Możliwość uczestnictwa w bankiecie",
-      "Bilet na wyklad: Joanna Brejecka- Pamungkas Przewlekłe infekcje oddechowe u dzieci - wzorce patologii, fitoterapia zachodnia wg tcm, tuina pediatryczna.",
-      "Bilet na wykład: Bożena Olszowska Chińska sztuka czytania z twarzy - przejrzeć wszystko na wylot.",
+      "pricing-tier-special-tickets-feature-1",
+      "pricing-tier-special-tickets-feature-2",
+      "pricing-tier-special-tickets-feature-3",
     ],
     mostPopular: false,
   },
   {
-    name: "Bilety na kongres",
+    name: "pricing-tier-congress-tickets-name",
     id: "tier-startup",
     href: "#",
-    priceMonthly: "od 407 PLN",
-    description: "Bilet wstępu na wykłady.",
+    priceMonthly: "pricing-tier-congress-tickets-price",
+    description: "pricing-tier-congress-tickets-description",
     features: [
-      "Uczestnitwo na wykladach w zalezności od wybranego biletu",
-      "Dostęp do warsztatów i paneli dyskusyjnych w czasie trwanie kongresu",
-      "Dostęp do wszystkich wykładów w sekcji po pobrania",
-      "zniżki dla wybranych partnerów",
+      "pricing-tier-congress-tickets-feature-1",
+      "pricing-tier-congress-tickets-feature-2",
+      "pricing-tier-congress-tickets-feature-3",
+      "pricing-tier-congress-tickets-feature-4",
     ],
     mostPopular: true,
   },
   {
-    name: "Kawa z Izabelą",
+    name: "pricing-tier-coffee-name",
     id: "tier-enterprise",
     href: "#",
-    priceMonthly: "999 PLN",
-    description: "Konsultacje z Izabelą",
+    priceMonthly: "pricing-tier-coffee-price",
+    description: "pricing-tier-coffee-description",
     features: [
-      "Spotkanie jeden na jeden z Izabelą",
-      "Spytaj o wszystko co chcesz",
-      "Uzyskaj odpowiedzi na pytania dotyczące Twojej praktyki",
-      "Konkretne wskazówki i porady",
-      "Zarezerwuj spotkanie w dogodnym dla Ciebie terminie",
+      "pricing-tier-coffee-feature-1",
+      "pricing-tier-coffee-feature-2",
+      "pricing-tier-coffee-feature-3",
+      "pricing-tier-coffee-feature-4",
+      "pricing-tier-coffee-feature-5",
     ],
     mostPopular: false,
   },
@@ -54,6 +54,7 @@ const pricingKey = {
   title: "pricing-key-section-title",
   description: "pricing-key-section-description",
   popular: "pricing-key-section-popular",
+  buy: "pricing-key-section-buy",
 };
 
 const PricingSection = () => {
@@ -89,7 +90,7 @@ const PricingSection = () => {
                       "text-lg/8 font-semibold",
                     )}
                   >
-                    {tier.name}
+                    {t(tier.name)}
                   </h3>
                   {tier.mostPopular ? (
                     <p className="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs/5 font-semibold text-indigo-600">
@@ -98,15 +99,12 @@ const PricingSection = () => {
                   ) : null}
                 </div>
                 <p className="mt-4 text-sm/6 text-gray-600">
-                  {tier.description}
+                  {t(tier.description)}
                 </p>
                 <p className="mt-6 flex items-baseline gap-x-1">
                   <span className="text-4xl font-semibold tracking-tight text-gray-900">
-                    {tier.priceMonthly}
+                    {t(tier.priceMonthly)}
                   </span>
-                  {/*<span className="text-sm/6 font-semibold text-gray-600">*/}
-                  {/*  /month*/}
-                  {/*</span>*/}
                 </p>
                 <ul
                   role="list"
@@ -118,7 +116,7 @@ const PricingSection = () => {
                         aria-hidden="true"
                         className="h-6 w-5 flex-none text-indigo-600"
                       />
-                      {feature}
+                      {t(feature)}
                     </li>
                   ))}
                 </ul>
@@ -133,7 +131,7 @@ const PricingSection = () => {
                   "mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600",
                 )}
               >
-                Kup bilet
+                {t(pricingKey.buy)}
               </a>
             </div>
           ))}

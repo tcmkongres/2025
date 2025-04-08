@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import HeroSection from "./HeroSection.jsx";
-import AboutSection from "./AboutSection.jsx";
+// import AboutSection from "./AboutSection.jsx";
 import TcmSection from "./TcmSection.jsx";
 import ImageSection from "./ImageSection.jsx";
 import SpeakersSection from "./SpeakersSection.jsx";

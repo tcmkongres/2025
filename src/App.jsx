@@ -21,7 +21,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      {/*<Route path="/privacy" element={<PrivacyPolicy />} />*/}
+      <Route path="/privacy" element={<PrivacyPolicy />} />
       {/*<Route path="/terms" element={<Terms />} />*/}
       {/*<Route path="/downloads" element={<Downloads />} />*/}
       {/*<Route path="/speaker/:id" element={<Speaker />} />*/}

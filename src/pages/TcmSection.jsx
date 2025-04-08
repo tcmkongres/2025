@@ -60,22 +60,22 @@ const TcmSection = () => {
       <div className="overflow-hidden">
         <div className="mx-auto max-w-7xl px-6 pt-18 pb-32 sm:pt-30 lg:px-8 lg:pt-16">
           <div className="mx-auto max-w-2xl gap-x-14 lg:mx-0 lg:flex lg:max-w-none lg:items-center">
-            <div className="relative w-full lg:max-w-xl lg:shrink-0 xl:max-w-2xl">
+            <div className="relative   xl:max-w-full 2xl:max-w-2xl">
               <h1 className="text-5xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-7xl">
                 {t(tcmKey.title)}
               </h1>
-              <p className="mt-8 text-lg font-medium text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
+              <p className="mt-8 text-lg font-medium text-pretty text-gray-500  sm:text-xl/8 ">
                 {t(tcmKey.description)}
               </p>
 
               <p className="mt-8 text-3xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
                 {t(tcmKey.titleNext)}
               </p>
-              <p className="mt-8 text-sm font-medium text-pretty text-gray-500 sm:max-w-md sm:text-xl/8 lg:max-w-none">
+              <p className="mt-8 text-lg font-medium text-pretty text-gray-500  sm:text-xl/8 ">
                 {t(tcmKey.descriptionNext)}
               </p>
             </div>
-            <div className="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
+            <div className="hidden xl:flex mt-14 justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
               <div className="ml-auto w-44 flex-none space-y-8 pt-32 sm:ml-0 sm:pt-80 lg:order-last lg:pt-36 xl:order-none xl:pt-80">
                 <div className="relative">
                   <img

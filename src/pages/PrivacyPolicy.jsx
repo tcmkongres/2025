@@ -89,12 +89,10 @@ const PrivacyPolicy = () => {
             key={sectionKey}
             className="mt-8 rounded-lg bg-white p-6 shadow-sm"
           >
-            {/* Możesz tu dodać nagłówek sekcji, np.:
-                <h2 className="text-xl font-semibold text-indigo-600">
-                  Sekcja {sectionKey}
-                </h2>
-               Jeśli chcesz pokazywać nazwy sekcji w bardziej wyróżniony sposób.
-            */}
+            <h2 className="text-xl font-semibold text-indigo-600">
+              Sekcja {sectionKey}
+            </h2>
+
             <ul role="list" className="space-y-6 text-gray-700">
               {items.map((item) => (
                 <li className="flex gap-x-3" key={item.section}>

@@ -3,7 +3,7 @@ const footerNavigation = {
     { name: "2023", href: "#" },
     { name: "Pliki do pobrania", href: "#" },
     { name: "Regulamin TCM Kongres", href: "#" },
-    { name: "Polityka prywatności", href: "#" },
+    { name: "Polityka prywatności", href: "/privacy" },
   ],
   social: [
     {
